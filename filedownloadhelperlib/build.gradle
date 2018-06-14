@@ -1,5 +1,9 @@
 apply plugin: 'com.android.library'
 
+tasks.withType(Javadoc) {
+    options.encoding = "UTF-8"
+}
+
 android {
     compileSdkVersion 27
 

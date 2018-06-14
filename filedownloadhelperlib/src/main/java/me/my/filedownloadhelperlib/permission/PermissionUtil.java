@@ -69,8 +69,7 @@ public class PermissionUtil {
     /**
      * 判断是否已拒绝过权限
      *
-     * @return
-     * @describe :如果应用之前请求过此权限但用户拒绝，此方法将返回 true;
+     * @return 如果应用之前请求过此权限但用户拒绝，此方法将返回 true;
      * -----------如果应用第一次请求权限或 用户在过去拒绝了权限请求，
      * -----------并在权限请求系统对话框中选择了 Don't ask again 选项，此方法将返回 false。
      */
@@ -101,7 +100,7 @@ public class PermissionUtil {
     /**
      * 检测权限
      *
-     * @describe：具体实现由回调接口决定
+     * 具体实现由回调接口决定
      */
     public static void checkPermission(Context context, String permission, PermissionCheckCallBack callBack) {
         if (checkPermission(context, permission)) { // 用户已授予权限
@@ -117,7 +116,7 @@ public class PermissionUtil {
     /**
      * 检测多个权限
      *
-     * @describe：具体实现由回调接口决定
+     * 具体实现由回调接口决定
      */
     public static void checkMorePermissions(Context context, String[] permissions, PermissionCheckCallBack callBack) {
         List<String> permissionList = checkMorePermissions(context, permissions);
